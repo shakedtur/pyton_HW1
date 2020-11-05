@@ -145,13 +145,13 @@ print("is prime?",IsPrimary(103))
 #ex7
 """recursive function reduce the number 0"""
 
-def remove_digit( num, removedigit1):
+def reduce( num, removedigit1):
     if num==0:
         return 0
     if num%10!=removedigit1:
         return num%10+remove_digit(num//10,removedigit1)*10
     return remove_digit(num//10,removedigit1)
-#b=remove_digit(306098,0)
+#b=reduce(306098,0)
 #print("",b)
 
 #ex8
